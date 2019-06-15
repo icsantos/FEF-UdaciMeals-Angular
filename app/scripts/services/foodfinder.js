@@ -15,5 +15,10 @@ angular.module('udaciMealsApp')
     this.getMenu = function() {
       return $.get('/menu/menu.json');
     };
-    // AngularJS will instantiate a singleton by calling "new" on this function
+
+    this.getItem = function(id) {
+      var menuItemFile = `/menu/${id}.json`;
+
+      return $.get(menuItemFile);
+    };
   });
