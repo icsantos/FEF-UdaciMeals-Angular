@@ -4,5 +4,10 @@
   "img": "ham-goat-cheese-croissant.jpg",
   "calories": 670,
   "rating": 3.9,
-  "description": "A savory slice of ham topped with a wedge of goat cheese, all on a buttery, flaky croissant."
+  "description": "A savory slice of ham topped with a wedge of goat cheese, all on a buttery, flaky croissant.",
+  "reviews": [
+    "Delicious.  I LOVE goat cheese!",
+    "Very good, lots of flavor.",
+    "The croissant was dry and kind of chewy."
+  ]
 }

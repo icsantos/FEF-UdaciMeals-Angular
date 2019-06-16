@@ -1,8 +1,6 @@
 /* eslint-disable valid-jsdoc */
 /* eslint-disable no-invalid-this */
 
-'use strict';
-
 /**
  * @ngdoc function
  * @name udaciMealsApp.controller:ItemCtrl
@@ -11,10 +9,12 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('ItemCtrl', ['$stateParams', 'foodFinder', function ($stateParams, foodFinder) {
+  .controller('ItemCtrl', [
+    '$stateParams', 'foodFinder', function ($stateParams, foodFinder) {
     var vm = this;
 
     foodFinder.getItem($stateParams.id).then(function(data) {
       vm.data = data;
     });
-  }]);
+  }
+]);

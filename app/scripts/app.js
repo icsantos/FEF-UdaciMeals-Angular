@@ -1,7 +1,5 @@
 /* eslint-disable valid-jsdoc */
 
-'use strict';
-
 /**
  * @ngdoc overview
  * @name udaciMealsApp
@@ -12,7 +10,8 @@
  */
 angular
   .module('udaciMealsApp', ['ui.router'])
-  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  .config([
+    '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
@@ -25,5 +24,14 @@ angular
         'url': '/item/:id',
         'templateUrl': 'views/item.html',
         'controller': 'ItemCtrl as item'
+      })
+      .state('item.nutrition', {
+        'url': '/nutrition',
+        'templateUrl': 'views/item-nutrition.html'
+      })
+      .state('item.reviews', {
+        'url': '/reviews',
+        'templateUrl': 'views/item-reviews.html'
       });
-  }]);
+  }
+]);

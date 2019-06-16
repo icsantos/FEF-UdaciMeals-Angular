@@ -1,9 +1,6 @@
 /* eslint-disable valid-jsdoc */
 /* eslint-disable capitalized-comments */
 /* eslint-disable no-invalid-this */
-/* eslint-env angular */
-
-'use strict';
 
 /**
  * @ngdoc function
@@ -13,7 +10,8 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('MenuCtrl', ['foodFinder', 'orderManager', function (menu, manager) {
+  .controller('MenuCtrl', [
+    'foodFinder', 'orderManager', function (menu, manager) {
     var vm = this;
 
     menu.getMenu().then(function(data) {

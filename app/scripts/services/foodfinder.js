@@ -1,7 +1,4 @@
 /* eslint-disable no-invalid-this */
-/* eslint-env angular*/
-
-'use strict';
 
 /**
  * @ngdoc service

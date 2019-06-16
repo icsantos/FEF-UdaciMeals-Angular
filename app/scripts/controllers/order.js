@@ -1,8 +1,6 @@
 /* eslint-disable no-invalid-this */
 /* eslint-disable valid-jsdoc */
 
-'use strict';
-
 /**
  * @ngdoc function
  * @name udaciMealsApp.controller:OrderCtrl
@@ -11,10 +9,12 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('OrderCtrl', ['orderManager', function (orderManager) {
+  .controller('OrderCtrl', [
+    'orderManager', function (orderManager) {
     this.list = orderManager.getOrders();
 
     this.setActiveDay = function(day) {
       orderManager.setActiveDay(day);
-    }
-  }]);
+    };
+  }
+]);

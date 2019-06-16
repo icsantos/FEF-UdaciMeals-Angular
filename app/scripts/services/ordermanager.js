@@ -1,7 +1,5 @@
 /* eslint-disable no-invalid-this */
 
-'use strict';
-
 /**
  * @ngdoc service
  * @name udaciMealsApp.orderManager
